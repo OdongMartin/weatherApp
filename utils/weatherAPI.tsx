@@ -14,7 +14,7 @@ export const fetchWeather = async (city: string) => {
 
             },
         });
-        // const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=a66a46a1f04464884f9ab1bc86b3972f')
+        
         return response.data;
     } catch (error) {
         throw new Error('Error fetching weather data');

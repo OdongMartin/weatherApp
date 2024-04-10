@@ -28,11 +28,10 @@ const Weather: React.FC<{ city: string }> = ({ city }) => {
     return (
         <div>
             {/* <p>{[weatherData]}</p> */}
-            <h2>Weather in {city}</h2>
+            <h2>Weather in {weatherData.name}, {weatherData.sys.country}</h2>
             <p>Temperature: {weatherData.main.temp}°C</p>
-            <p>Humidity: {weatherData.main.humidity}</p>
-            <p>Temperature: {weatherData.main.humidity}</p>
-            <p>Description: {weatherData.weather[0].description}</p>
+            <p>Humidity: {weatherData.main.humidity}%</p>
+            <p>Weather: {weatherData.weather[0].main}({weatherData.weather[0].description})</p>
         </div>
     );
 };
