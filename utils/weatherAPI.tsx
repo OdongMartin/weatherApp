@@ -8,7 +8,7 @@ export const fetchWeather = async (city: string) => {
         const response = await axios.get(`${BASE_URL}/weather`, {
             params: {
                 q: city,
-                units: 'metric', // or 'imperial' for Fahrenheit
+                units: 'metric', //or 'imperial' for Fahrenheit
                 appid: API_KEY,
 
             },
